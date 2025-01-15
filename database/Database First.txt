@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Server=DESKTOP-26PNQDT;Database=FinanceTracker;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext --use-database-names
