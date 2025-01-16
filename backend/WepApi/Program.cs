@@ -30,9 +30,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Db Context
+// Db Context: Notebook
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionNotebook")));
+
+// Db Context: Desktop
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionDesktop")));
 
 // Cors: Mecanismo de seguridad que permite o restringe que los recursos de un servidor sean solicitados
 // desde un dominio distinto al del servidor, en este caso, el frontend en React.
@@ -60,7 +64,6 @@ if (app.Environment.IsDevelopment())
 
 // Aplica la política CORS
 app.UseCors("AllowReactApp"); 
-
 
 app.UseHttpsRedirection();
 

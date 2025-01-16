@@ -1,0 +1,28 @@
+.NET 8 - API REST
+
+--- .NET es una plataforma opensource diseñada para todo tipo de desarrollos (escritorio, web, IA, etc.) 
+ 1) .NET Framework (2002)
+ 2) .NET Core (2016)
+ 3) .NET (2020)
+
+--- Frameworks para el desarrollo de aplicaciones web.
+ - ASP.NET: Diseñado para trabajar con .NET Framework.
+ - ASP.NET CORE: Diseñado para trabajar con .NET Core.
+
+--- NuGet: Sistema de gestion de paquetes para el ecosistema de desarrollo de software de Microsoft (similar a npm)
+
+--- Swagger: Es un conjunto de herramientas que nos ayudan a documentar y diseñar apis. Ademas nos permite probar los endpoints de nuestra api. 
+
+
+--- Program.cs: Representa la entrada principal del programa, es donde se configura y ejecuta la aplicacion.
+ - Configuraciones basicas para ejecutar la aplicacion.
+
+
+--- Entity Framework Core: Es un ORM para facilitar el acceso y manipulacion de bbdd mediante un mapeo en lugar de consultas sql directas. (por ejemplo prisma en NodeJS)
+ - DbContext: Clase fundamental que forma parte de Entity Framework Core.
+   - Representa una sesion de trabajo con la bbdd y se usa para realizar operaciones tipicas de CRUD.
+   - Proporciona un conjunto de apis que simplifican la interaccion con la base de datos permitiendo trabajar con objetos en lugar de ocuparse de las operaciones de la bbdd.
+   - Constructor: - Se usa para inicializar el contexto de la bbdd con las opciones de configuracion necesarias para conectarse y operar con la bbdd.
+                  - Permite la inyeccin de dependencias al aceptar las opciones como parametros.
+
+ - DbSet: Es una clase de Entity Framework que representa una coleccion de entidades en el contexto de las bbdd. ('Person' es el tipo de entidad que se almacena en el conjunto)

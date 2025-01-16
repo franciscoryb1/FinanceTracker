@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Server=(localdb)\localdb1;Database=FinanceTracker;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext
